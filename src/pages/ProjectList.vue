@@ -4,12 +4,13 @@
     <div class="row">
             <div class="col-12 col-md-4" v-for="(project, index) in projects" :key="index">
                 <div class="card" style="width: 18rem;">
-                    <img :src="`${store.imagBasePath}${project.cover_image}`" class="card-img-top" :alt="project.title">
+                    <img :src="`${store.imagBasePath}${project.cover_image}`" class="card-img-top" :alt="project.title" v-if="(project.cover_image)">
+                    <img src="https://via.placeholder.com/100x100.png?text=Placeholder" class="card-img-top" :alt="project.title" v-else>
                     <div class="card-body">
                         <h5 class="card-title">{{project.title}}</h5>
                         <p class="card-text">{{ truncateContent(project.description) }}</p>
                         <router-link class="btn btn-primary" :to="{name: 'single-project', params:{slug: project.slug}}">
-                        Vedi il post
+                        Vedi il progetto
                         </router-link>                    
                     </div>
                 </div>
