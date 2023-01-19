@@ -2,7 +2,7 @@
     <section>
     <h1>Lista dei progetti</h1>
     <div class="row">
-            <div class="col-12 col-md-4" v-for="(project, index) in projects" :key="index">
+            <div class="col-12 col-md-4 mt-5" v-for="(project, index) in projects" :key="index">
                 <div class="card" style="width: 18rem;">
                     <img :src="`${store.imagBasePath}${project.cover_image}`" class="card-img-top mt-3" :alt="project.title" v-if="(project.cover_image)">
                     <img src="https://via.placeholder.com/100x100.png?text=Placeholder" class="card-img-top" :alt="project.title" v-else>
