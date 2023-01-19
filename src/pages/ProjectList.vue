@@ -17,7 +17,7 @@
             </div>
     </div>
     <nav aria-label="Page navigation example">
-  <ul class="pagination">
+  <ul class="pagination mt-5">
     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
     <li class="page-item" v-for="n in lastPage"><a class="page-link" @click="getProjects(n)">{{n}}</a></li>    
   </ul>
@@ -66,4 +66,7 @@
 </script>
 
 <style lang="scss" scoped>
+.card{
+height: 600px;
+}
 </style>
