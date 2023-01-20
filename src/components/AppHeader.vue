@@ -52,4 +52,8 @@
 </script>
 
 <style lang="scss" scoped>
+a{
+    color: rgb(211, 137, 26);
+    font-size: 20px;
+}
 </style>

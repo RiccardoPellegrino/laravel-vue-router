@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1>Lista dei progetti</h1>
+        <h1 class="mt-3">Lista dei progetti</h1>
         <div class="row">
             <div class="col-12 col-md-4 mt-5" v-for="(project, index) in projects" :key="index">
                 <CardComponent :project="project"/>
@@ -61,7 +61,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-    height: 600px;
+
+h1{
+    color: rgb(72, 238, 216);
 }
 </style>

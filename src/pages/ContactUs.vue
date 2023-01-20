@@ -23,4 +23,7 @@ import ContactForm from '../components/ContactForm.vue';
 
 <style lang="scss" scoped>
 
+h1{
+    color: #805D93;
+}
 </style>

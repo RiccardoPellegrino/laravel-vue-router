@@ -82,5 +82,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+h2{
+    color: #805D93;
+}
 </style>

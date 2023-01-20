@@ -9,8 +9,16 @@ $fa-font-path: '../webfonts';
 @import 'bootstrap/scss/bootstrap';
 
 body{
-    background-color: bisque;
+    min-height: 100vh;
+    background: rgb(34,193,195);
+background: -moz-linear-gradient(114deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+background: -webkit-linear-gradient(114deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+background: linear-gradient(114deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3",endColorstr="#fdbb2d",GradientType=1);
 }
 nav{
-    background-color: rgb(218, 208, 208);
+    background-color: #797270;
+}
+main{
+    min-height: 100%;
 }
